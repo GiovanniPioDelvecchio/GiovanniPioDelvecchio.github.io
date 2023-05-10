@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>My Portfolio</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		#header {
+			background-color: #333;
+            color:#f5f5f5;
+			border-radius: 10px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+			margin: 20px;
+			padding: 20px;
+			text-align: center;
+			width: 80%;
+            float: center;
+		}
+
+		h1 {
+			margin: 0;
+		}
+
+		.project-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin: 20px;
+		}
+
+		.project {
+			background-color: #f5f5f5;
+			border-radius: 10px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+			margin: 20px;
+			padding: 20px;
+            text-align: center;
+            width: 80%;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+		}
+
+		.project img {
+            max-height: 200px;
+            max-width: 300px;
+			margin-bottom: 10px;
+            margin-right: 10px;
+		}
+
+		.project h3 {
+			margin-top: 0;
+            text-align: center;
+		}
+
+        .div-img{
+            width: 30%;
+            float: left;
+            text-align: center;
+        }
+
+        .div-text {
+            margin-left: 20px;
+            width: 70%;
+            float: right;      
+        }
+
+		.project p {
+			margin-bottom: 0;
+            text-align: left;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="project-container">
+
+        <header id="header">
+            <h1>Currently Working On:</h1>
+        </header>
+
+        <div class="project" onclick="window.open('https://github.com/GiovanniPioDelvecchio/GCNs_on_text', '_blank');" style="cursor: pointer;">
+		
+			<div class = "div-img"><img src="imgs/pyg.png" alt="PyG"></div>
+			<div class="div-text"><h3>Addressing text classification as Graph classification</h3>
+			<p>The purpose of this project is to address the problem of text classification as a 
+                graph classification problem through means of GCNs and GAT networks.
+            </p></div>
+		
+        </div>
+
+        <div class="project" onclick="window.open('https://github.com/GiovanniPioDelvecchio/SPADATE', '_blank');" style="cursor: pointer;">
+		
+			<div class = "div-img"><img src="imgs/spadate.png" alt="Spadate"></div>
+			<div class="div-text"><h3>Spadate</h3>
+			<p>This is a project made just for fun: essentially it has the aim of bringing a souls-like styled PVP
+                on different platforms as well as mobile.
+            </p></div>
+		
+        </div>
+
+        <header id="header">
+            <h1>Previous Projects</h1>
+        </header>
+        
+        <div class="project" onclick="window.open('https://github.com/GiovanniPioDelvecchio/BigDataAnalyticsProject', '_blank');" style="cursor: pointer;">
+            
+			<div class = "div-img"><img src="imgs/spark.png" alt="Spark"></div>
+			<div class="div-text"><h3>Default prediction in a distributed setting
+                using Hadoop, Yarn and Spark</h3>
+			<p> This project replicates the results of the paper "The comparisons of data mining techniques for the predictive
+                accuracy of probability of default of credit card clients", by I-Cheng Yeh <br> and
+                Che-hui Lien in a distributed setting.<br> Six different Data Mining methods
+                were trained in a Hadoop, Yarn and Spark environment: approximated KNN,
+                Linear Discriminant Analysis, Multi-layer Perceptron, Logistic Regression,
+                Decision Tree and Naive Bayes. The results were compared by means of
+                the area ratios of the cumulative gain charts and the regression lines in the
+                scatterplots obtained by plotting the probabilities computed by each model
+                and the "true" probabilities of default obtained by means of the "Sorting
+                Smoothing Method".</p></div>
+		</div>
+
+        <div class="project" onclick="window.open('https://github.com/GiovanniPioDelvecchio/NLP-Project', '_blank');" style="cursor: pointer;">
+
+			<div class = "div-img"><img src="imgs/touche.png" alt="Touché"></div>
+			<div class="div-text"><h3>Human values extraction in arguments through DNN</h3>
+			<p> This project is related to the Touché23-ValueEval challenge, consisting in a multi-label text classification problem
+                where the goal is to extract values, such as Humility, Hedonism, and Achievement, from arguments, which are composed by "Premise", "Consequence" and
+                "Stance" (which creates a link between the first two components). <br> The problem
+                was tackled through a pipeline consisting in: dataset cleaning and splitting
+                according to unique conclusions; training of the deep neural network models;
+                evaluation of the models based on F1-macro and analysis of the most difficult
+                classes to predict. <br> Three architectures were proposed:
+                GloVe embedding + Bi-GRU + flatten + dense;
+                BERT + Bi-LSTM + dense (transfer learning).
+                Fine-tuned BERT + dense layers.</p></div>
+		</div>
+
+        <div class="project" onclick="window.open('https://github.com/GiovanniPioDelvecchio/Distil-Gen-QA', '_blank');" style="cursor: pointer;">
+			<div class = "div-img"><img src="imgs/genQA.png" alt="GenQA"></div>
+			<div class="div-text"><h3>Generative Question Answering tool based on distilled BERT models
+                </h3>
+			<p> This Question Answering
+                tool can be broken down to a seq2seq architecture including an encoder (tiny-BERT and Distil-RoBERTa were
+                employed) followed by a RNN-based decoder and a sampler to predict the
+                next word for the answer. <br> The training dataset is CoQa. Some variations
+                of the baseline-model included the use of beam search and the addition of
+                history, results were compared by means of the F1-macro scores.
+                </p></div>
+		</div>
+
+        
+
+        <div class="project" onclick="window.open('https://github.com/GiovanniPioDelvecchio/automatic-POS-tagging', '_blank');" style="cursor: pointer;">
+
+			<div class = "div-img"><img src="imgs/POStag.png" alt="POS"></div>
+			<div class="div-text"><h3>POS tagging tool based on GloVe embeddings</h3>
+			<p> This Part of Speech tagging tool was developed
+                using GloVe embeddings followed by as small recurrent neural network and a
+                time-distributed dense layer. The training was performed on a fraction of the
+                NLTK corpus for POS-tagging. Different variations of the same architecture
+                were analyzed, comparing the F1-macro scores.
+                </p></div>
+		</div>
+
+        <div class="project" onclick="window.open('https://github.com/GiovanniPioDelvecchio/c_systems_exam', '_blank');" style="cursor: pointer;">
+
+			<div class = "div-img"><img src="imgs/CSys.png" alt="ClassSize"></div>
+			<div class="div-text"><h3>Analysis of the "Class size paradox" through a NetLogo model</h3>
+			<p> The paradox consists in how individuals find themselves
+                associated with people with more friends than they have. <br> This phenomenon
+                was replicated in an agent-based environment by using two models for graph
+                formation (Erdős–Rényi and Barabási–Albert) and three different models for
+                network dynamics (randomly add and remove links, add and remove links
+                according to a genetic algorithm, add and remove links according to a game
+                theory approach). The analysis was performed by observing the distributions
+                of neighbors, of neighbors of neighbors and the clustering coefficient.</p></div>
+		</div>
+
+        <div class="project" onclick="window.open('https://github.com/GiovanniPioDelvecchio/CDMO_2022', '_blank');" style="cursor: pointer;">
+
+			<div class = "div-img"><img src="imgs/SAT.png" alt="Constraint"></div>
+			<div class="div-text"><h3>Creation of various optimization models for the VLSI problem</h3>
+			<p>The Very Large Scale Integration problem refers to the trend of integrating
+                circuits into silicon chips. <br> Essentially the problem was formulated as the 2D
+                spatial packing problem. The optimization models needed to solve a plethora
+                of instances were developed using the SAT and SMT solver Z3, the Constraint
+                Programming environment MiniZinc (using Chuffed as solver) and the MIP
+                solvers CPLEX and Gurobi. Apart from the CP model, the code was entirely
+                written in Python.</p></div>
+		</div>
+
+        <div class="project" onclick="window.open('https://github.com/GiovanniPioDelvecchio/DeepLExam/tree/main', '_blank');" style="cursor: pointer;">
+
+			<div class = "div-img"><img src="imgs/RoB.png" alt="Sentiment"></div>
+			<div class="div-text"><h3>Sentiment analysis using RoBERTa</h3>
+			<p> The project consists in a pipeline which takes in input a
+                dataset of comments from Reddit. <br> After a preprocessing step, the dataset
+                is fed to the RoBERTa tokenizer, then the tokenized comments are fed to the
+                model, which is the concatenation of a frozen RoBERTa model, a bidirectional
+                LSTM layer, a self attention layer and a combination of convolutions, max
+                pooling, dropout and dense layers in order to compute the probabilities of
+                each of the seven sentiments involved.
+                </p></div>
+		</div>
+
+        <div class="project" onclick="window.open('https://github.com/DomMcOyle/FAIKR3-Project', '_blank');" style="cursor: pointer;">
+
+			<div class = "div-img"><img src="imgs/bayesian.png" alt="Bayesian"></div>
+			<div class="div-text"><h3>Bayesian Networks for the inference of feature values</h3>
+			<p> The project consists in the design of Bayesian Networks to perform queries over 
+                the features of a dataset of credit card clients. <br>
+                Two networks were designed and compared using the BIC score: one created by considering
+                the correlation matrix and selecting an ordering of the features; the other was created by feeding
+                the dataset to the hillclimb algorithm.
+                Various queries were performed to test the accuracy of the best network 
+                (wich is the latter, with the addition of a blacklist) both with exact and approximate inference.
+                Conditional probability tables were plotted in order to check if probabilities were consistent with 
+                the assumptions emerging from the pre-processing step. 
+                </p></div>
+		</div>
+
+
+        <div class="project" onclick="window.open('https://github.com/DomMcOyle/ArgumentationModelPL', '_blank');" style="cursor: pointer;">
+
+			<div class = "div-img"><img src="imgs/Argumentation.png" alt="Argumentation"></div>
+			<div class="div-text"><h3>Argumentation Graphs in PROLOG </h3>
+			<p> The project consists in considering argumentation models extracted through argument mining techniques and modelling them as
+                PROLOG Knowledge Bases with associated rules.</p></div>
+		</div>
+
+        <div class="project" onclick="location.href='#';" style="cursor: pointer;">
+
+			<div class = "div-img"><img src="imgs/tablut.gif" alt="Tablut"></div>
+			<div class="div-text"><h3>Artificial Player for the game "Tablut"</h3>
+			<p> The project is an Artificial Player developed for a client-server application with time constraints. It consists in an application of the
+                Min-Max algorithm with Alpha-Beta pruning, where the heuristic needed in
+                order to compute the next move is partially hard-coded and partially learned
+                through a Convolutional Neural Network.</p></div>
+		</div>
+
+        <div class="project" onclick="window.open('https://github.com/GiovanniPioDelvecchio/TesiDBpedia', '_blank');" style="cursor: pointer;">
+
+			<div class = "div-img"><img src="imgs/sparql.png" alt="Sparql"></div>
+			<div class="div-text"><h3>Automatic creation of a dataset of complex queries
+                over<br> Knowledge Graphs</h3>
+			<p> This work of thesis consists in the creation of a framework in which is possible to define templates for complex SPARQL queries
+                over the ontology "DBpedia" and instantiate them, in order to create a dataset
+                where each entry is an instance of a SPARQL query with an associated natural
+                language query, the answers, the involved entities, relationships and modifiers
+                of the query.
+                The whole project was developed in Python by using a SPARQL wrapper, gingerit, which was needed in order to correct automatically the query expressed
+                in natural language, and the JSON format for the dataset serialization.</p></div>
+		</div>
+
+        <div class="project" onclick="window.open('https://github.com/GiovanniPioDelvecchio/ProgettoSistemiMultimediali', '_blank');" style="cursor: pointer;">
+
+			<div class = "div-img"><img src="imgs/Rizo.png" alt="Rhizotrons"></div>
+			<div class="div-text"><h3>Application of RUSBoost
+                over a dataset of pictures of cylindric rhizotrons</h3>
+			<p> The project concerned the creation of a dataset of
+                pixels with associated salient features (e.g. Local Binary Pattern, entropy,
+                LAB color space values of the pixel) and the application of Random Undersampling Boost over
+                the dataset in order to segment the roots of the plants inside the rhizotrons.</p></div>
+		</div>
+
+        <div class="project" onclick="window.open('https://docs.google.com/presentation/d/1twohvp4NH9zFUAjDmIDOseKCtz6JBm1pifu_6l6nVXs/edit?usp=sharing', '_blank');" style="cursor: pointer;">
+
+			<div class = "div-img"><img src="imgs/snooze.png" alt="Sno-snooze"></div>
+			<div class="div-text"><h3>Prototype for a smart system for sleep monitoring and assisted
+                awakening</h3>
+			<p> Project for the course "Samsung Innovation Campus", the prototype has
+                been made with Raspberry Pi model 3 and a Python program where "YouTube"
+                and "Spotify" APIs have been used. The program featured multithreading
+                and a graphical interface compatible with Raspberry Pi.</p></div>
+		</div>
+
+        <div class="project" onclick="window.open('https://github.com/GiovanniPioDelvecchio/progettoMapDDL', '_blank');" style="cursor: pointer;">
+
+			<div class = "div-img"><img src="imgs/regtree.png" alt="RegressionTree"></div>
+			<div class="div-text"><h3>Regression tree learner</h3>
+			<p> Developed in Java, using SQL libraries and extended afterwards
+                by the development of a GUI using JavaFX.</p></div>
+		</div>
+
+        <div class="project" onclick="location.href='#';" style="cursor: pointer;">
+
+			<div class = "div-img"><img src="imgs/chess.png" alt="Chess"></div>
+			<div class="div-text"><h3>Chess for two players</h3>
+			<p> A Chess implementation for Command Line interface, written in Java using Gradel and
+                Docker.</p></div>
+		</div>
+
+        <div class="project" onclick="location.href='#';" style="cursor: pointer;">
+
+			<div class = "div-img"><img src="imgs/edlin.png" alt="Edlin"></div>
+			<div class="div-text"><h3>Edlin-like text editor</h3>
+			<p>This project consists in a line editor written in C.</p></div>
+		</div>
+
+        <div class="project" onclick="window.open('https://github.com/GiovanniPioDelvecchio/Collect4', '_blank');" style="cursor: pointer;">
+
+			<div class = "div-img"><img src="imgs/FORZA4.png" alt="Collect"></div>
+			<div class="div-text"><h3>Collect Four</h3>
+			<p> Developed in C as a complete game featuring the possibility to change the dimensions of the field and the number of players. <br> 
+                The players can be either human (on the same keyboard) or artificial. The artificial
+                player uses an ad-hoc heuristic to compute the next move.</p></div>
+		</div>
+
+
+
+		<!-- Add more projects as needed -->
+	</div>
+</body>
+</html>
