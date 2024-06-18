@@ -11,8 +11,8 @@
 		}
 
 		#header {
-			background-color: #333;
-            color:#f5f5f5;
+			background-color: #76ffa4;
+            color:#000000;
 			border-radius: 10px;
 			box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 			margin: 20px;
@@ -34,9 +34,9 @@
 		}
 
 		.project {
-			background-color: #f5f5f5;
+			background-color: #000000;
 			border-radius: 10px;
-			box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+			box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
 			margin: 20px;
 			padding: 20px;
             text-align: center;
@@ -68,6 +68,7 @@
             margin-left: 20px;
             width: 70%;
             float: right;      
+            color:#dadada;
         }
 
 		.project p {
@@ -76,23 +77,13 @@
 		}
 	</style>
 </head>
-<body>
+<body style = "background-color: #333;">
 
 	<div class="project-container">
 
         <header id="header">
             <h1>Currently Working On:</h1>
         </header>
-
-        <div class="project" onclick="window.open('https://github.com/GiovanniPioDelvecchio/GCNs_on_text', '_blank');" style="cursor: pointer;">
-		
-			<div class = "div-img"><img src="imgs/pyg.png" alt="PyG"></div>
-			<div class="div-text"><h3>Addressing text classification as Graph classification</h3>
-			<p>The purpose of this project is to address the problem of text classification as a 
-                graph classification problem through means of GCNs and GAT networks.
-            </p></div>
-		
-        </div>
 
         <div class="project" onclick="window.open('https://github.com/GiovanniPioDelvecchio/SPADATE', '_blank');" style="cursor: pointer;">
 		
@@ -105,9 +96,49 @@
         </div>
 
         <header id="header">
-            <h1>Previous Projects</h1>
+            <h1>Previous Projects:</h1>
         </header>
+
         
+        <div class="project" style="cursor: pointer;">
+			<div class = "div-img"><img src="imgs/whole_pipeline_warning_gen.png" alt="PyG"></div>
+			<div class="div-text"><h3>Zero-Shot Warning Generation for
+                Misinformative Multimodal Content</h3>
+			<p>This model detects multimodal misinformation through cross-modality consistency checks, 
+                surpassing the current state-of-the-art in accuracy and training time. 
+                Additionally, a lightweight model has been developed, which achieves comparable accuracy while using one-third of the parameters. 
+                A dual-purpose zero-shot learning task generates contextualized warnings for automatic debunking, 
+                enhancing user comprehension and decision-making. Qualitative and human evaluations highlight the approach's limitations and potential.
+            </p>
+        </div>
+        </div>
+        
+
+        <div class="project" onclick="window.open('https://github.com/DomMcOyle/TACO-expl', '_blank');" style="cursor: pointer;">
+			<div class = "div-img"><img src="imgs/maskdino_segmentation.png" alt="PyG"></div>
+			<div class="div-text"><h3>Instance Segmentation for Litter Detection</h3>
+			<p>This project consist in the development of a Litter Detection tool, employing cutting edge instance detection models like Mask Frozen-DETR, 
+                MaskDINO and SOLOv2 on TACO dataset.
+                The baseline (Mask R-CNN) has been outperformed in terms of Average Precision, with Mask Frozen-DETR (30.7 AP) and MaskDINO (33.7 AP).
+                Furthermore, various Class Activation Map methods have been employed for the purpose of explainability on all our models. 
+            </p>
+        </div>
+        </div>
+
+        <div class="project" onclick="window.open('https://github.com/GiovanniPioDelvecchio/GCNs_on_text', '_blank');" style="cursor: pointer;">
+			<div class = "div-img"><img src="imgs/arch_gat_2.drawio.png" alt="PyG"></div>
+			<div class="div-text"><h3>Casting text classification to Graph Classification
+                for Sentiment Analysis of Tweets</h3>
+			<p>This project addresses text classification using Deep Learning and Large Language Models, 
+                focusing on Graph Neural Networks (GNNs) and Graph Attention Networks (GATs) with dependency graphs as external knowledge. 
+                The models were tested on Kaggle's "Coronavirus Tweets NLP" sentiment analysis challenge and compared to a GLoVe+LSTM baseline 
+                and a BERT-based model. The best GNN model improved baseline accuracy by ~2%, achieving 68% test accuracy, 
+                though it remained behind the BERT model's 84% accuracy due to embedding over-smoothing and dependency graph extraction issues.
+            </p>
+        </div>
+        </div>
+        
+
         <div class="project" onclick="window.open('https://github.com/GiovanniPioDelvecchio/BigDataAnalyticsProject', '_blank');" style="cursor: pointer;">
             
 			<div class = "div-img"><img src="imgs/spark.png" alt="Spark"></div>
